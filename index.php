@@ -13,8 +13,8 @@
   
   <body>
     <h1>List Product</h1>
-    <table class="table">
-  <thead class="thead-dark">
+      <table class="table">
+        <thead class="thead-dark">
     <tr>
        <th scope="col">no</th>
        <th scope="col">Product kategori id</th>
