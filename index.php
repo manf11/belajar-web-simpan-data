@@ -10,19 +10,17 @@
 
     <title>Kopiku</title>
   </head>
-  
   <body>
     <h1>List Product</h1>
       <table class="table">
         <thead class="thead-dark">
-    <tr>
-       <th scope="col">no</th>
-       <th scope="col">Product kategori id</th>
-       <th scope="col">nama</th>
-       <th scope="col">harga</th>
-    </tr>
-  </thead>
-  
+          <tr>
+              <th scope="col">no</th>
+              <th scope="col">Product kategori id</th>
+              <th scope="col">nama</th>
+              <th scope="col">harga</th>
+          </tr>
+        </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
