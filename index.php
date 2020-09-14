@@ -24,12 +24,19 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>12121212</td>
-        <td>kopi robusta</td>
-        <td>50000</td>
-      </tr>
+      <?php
+      require('functions.php');
+      $product = query("SELECT * FROM product");
+      ?>
+      <?php foreach ($product as $row) : ?>
+        <tr>
+          <th scope="row"></th>
+          <td><?php echo $row['id'] ?></td>
+          <td><?php echo $row['product_kategori_id'] ?></td>
+          <td><?php echo $row['name'] ?></td>
+          <td><?php echo $row['price'] ?></td>
+        </tr>
+      <?php endforeach; ?>
     </tbody>
   </table>
 
