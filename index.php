@@ -1,51 +1,6 @@
-<!doctype html>
-<html lang="en">
+<?php
+// <!-- nahh index ini buat yang dijalanin user pertama kali
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+// jadi disini kita arahin user pertama kali buka website mau ke controller mana
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-  <title>Kopiku</title>
-</head>
-
-<body>
-  <h1>List Product</h1>
-  <table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">no</th>
-        <th scope="col">Product kategori id</th>
-        <th scope="col">nama</th>
-        <th scope="col">harga</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php
-      require('functions.php');
-      $product = query("SELECT * FROM product");
-      ?>
-      <?php foreach ($product as $row) : ?>
-        <tr>
-          <th scope="row"></th>
-          <td><?php echo $row['id'] ?></td>
-          <td><?php echo $row['product_kategori_id'] ?></td>
-          <td><?php echo $row['name'] ?></td>
-          <td><?php echo $row['price'] ?></td>
-        </tr>
-      <?php endforeach; ?>
-    </tbody>
-  </table>
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
-
-</html>
+require_once('controllers/index.php'); //ini gw arahin ke controllers/index.php
