@@ -5,7 +5,7 @@ $password = "";
 $db_name = "db_kopiku";
 
 // create database connection
-$connection = mysqli_connect($server,$user,$password,$db_name);
+$connection = mysqli_connect($server, $user, $password, $db_name);
 if (!$connection) {
     die("Failed to connect database." . mysqli_connect_error());
 }
@@ -29,6 +29,3 @@ $sql = "CREATE TABLE product(
 if (mysqli_query($connection, $sql)) {
     echo "Table product sucessfully created";
 }
-
-// close database connection
-mysqli_close($connection);
